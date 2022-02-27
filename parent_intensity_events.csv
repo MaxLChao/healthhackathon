@@ -1,40 +1,40 @@
-,dates,intensity,type,location,Record of Event,Sentiment
-1,1/2/22,4,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-2,1/5/22,4,Tantrum,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration
-3,1/6/22,3,Mute,In Public,Stopped speaking after running into a person,Anxiety
-4,1/6/22,3,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-5,1/6/22,2,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-6,1/9/22,1,Shut Down,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger
-7,1/10/22,5,Mute,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-8,1/12/22,5,Panic Attack,School,Punched and broke toy after we told him he could not play until after dinner,Frustration
-9,1/17/22,4,Shut Down,In Public,Stopped speaking after running into a person,Anxiety
-10,1/17/22,3,Tantrum,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-11,1/23/22,2,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-12,1/26/22,5,Mute,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger
-13,1/26/22,3,Shut Down,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-14,1/26/22,3,Shut Down,School,Punched and broke toy after we told him he could not play until after dinner,Frustration
-15,1/27/22,5,Shut Down,In Public,Stopped speaking after running into a person,Anxiety
-16,1/30/22,3,Tantrum,Relatives,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-17,1/30/22,3,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-18,1/30/22,4,Tantrum,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger
-19,1/30/22,3,Tantrum,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-20,2/1/22,3,Mute,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration
-21,2/8/22,1,Mute,In Public,Stopped speaking after running into a person,Anxiety
-22,2/11/22,4,Shut Down,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-23,2/11/22,5,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-24,2/11/22,4,Shut Down,In Public,Stopped speaking after took away toys. Refused to eat dinner,Anger
-25,2/12/22,2,Tantrum,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-26,2/18/22,1,Panic Attack,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration
-27,2/18/22,2,Tantrum,School,Stopped speaking after running into a person,Anxiety
-28,2/20/22,1,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-29,2/20/22,3,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-30,2/20/22,3,Tantrum,School,Stopped speaking after took away toys. Refused to eat dinner,Anger
-31,2/23/22,5,Tantrum,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-32,2/23/22,3,Panic Attack,School,Punched and broke toy after we told him he could not play until after dinner,Frustration
-33,2/23/22,3,Shut Down,In Public,Stopped speaking after running into a person,Anxiety
-34,2/24/22,2,Panic Attack,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-35,2/25/22,1,Shut Down,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-36,2/25/22,2,Shut Down,In Public,Stopped speaking after took away toys. Refused to eat dinner,Anger
-37,2/25/22,2,Panic Attack,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety
-38,2/25/22,3,Tantrum,In Public,Punched and broke toy after we told him he could not play until after dinner,Frustration
-39,2/27/22,3,Shut Down,School,Stopped speaking after running into a person,Anxiety
+,dates,intensity,type,location,Record of Event,Sentiment,Time
+1,1/2/22,4,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7AM
+2,1/5/22,4,Tantrum,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration,6PM
+3,1/6/22,3,Mute,In Public,Stopped speaking after running into a person,Anxiety,7AM
+4,1/6/22,3,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,5PM
+5,1/6/22,2,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+6,1/9/22,1,Shut Down,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger,7PM
+7,1/10/22,5,Mute,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,8AM
+8,1/12/22,5,Panic Attack,School,Punched and broke toy after we told him he could not play until after dinner,Frustration,7AM
+9,1/17/22,4,Shut Down,In Public,Stopped speaking after running into a person,Anxiety,7PM
+10,1/17/22,3,Tantrum,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7PM
+11,1/23/22,2,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+12,1/26/22,5,Mute,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger,7AM
+13,1/26/22,3,Shut Down,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+14,1/26/22,3,Shut Down,School,Punched and broke toy after we told him he could not play until after dinner,Frustration,7AM
+15,1/27/22,5,Shut Down,In Public,Stopped speaking after running into a person,Anxiety,5PM
+16,1/30/22,3,Tantrum,Relatives,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+17,1/30/22,3,Panic Attack,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7PM
+18,1/30/22,4,Tantrum,At Home,Stopped speaking after took away toys. Refused to eat dinner,Anger,8AM
+19,1/30/22,3,Tantrum,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7AM
+20,2/1/22,3,Mute,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration,7PM
+21,2/8/22,1,Mute,In Public,Stopped speaking after running into a person,Anxiety,7PM
+22,2/11/22,4,Shut Down,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+23,2/11/22,5,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7AM
+24,2/11/22,4,Shut Down,In Public,Stopped speaking after took away toys. Refused to eat dinner,Anger,6PM
+25,2/12/22,2,Tantrum,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7AM
+26,2/18/22,1,Panic Attack,At Home,Punched and broke toy after we told him he could not play until after dinner,Frustration,5PM
+27,2/18/22,2,Tantrum,School,Stopped speaking after running into a person,Anxiety,6PM
+28,2/20/22,1,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7PM
+29,2/20/22,3,Panic Attack,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,8AM
+30,2/20/22,3,Tantrum,School,Stopped speaking after took away toys. Refused to eat dinner,Anger,7AM
+31,2/23/22,5,Tantrum,In Public,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7PM
+32,2/23/22,3,Panic Attack,School,Punched and broke toy after we told him he could not play until after dinner,Frustration,7PM
+33,2/23/22,3,Shut Down,In Public,Stopped speaking after running into a person,Anxiety,6PM
+34,2/24/22,2,Panic Attack,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,7AM
+35,2/25/22,1,Shut Down,School,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,6PM
+36,2/25/22,2,Shut Down,In Public,Stopped speaking after took away toys. Refused to eat dinner,Anger,7AM
+37,2/25/22,2,Panic Attack,At Home,He screamed when there was multiple people in the bathroom and starting hitting his head against the wall,Anxiety,5PM
+38,2/25/22,3,Tantrum,In Public,Punched and broke toy after we told him he could not play until after dinner,Frustration,6PM
+39,2/27/22,3,Shut Down,School,Stopped speaking after running into a person,Anxiety,7PM
