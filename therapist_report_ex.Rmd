@@ -5,26 +5,70 @@ date: "2/26/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, echo=FALSE}
+load("outbreak_level.rda")
+library(ggplot2)
+library(scales)
+library(lubridate)
+# handling for plots
+# coloring for type of outbreaks
+outbreak_level_type <- c("#0070C0", "#00B050", "#FFC000", "#C00000")
+
+directionality=lapply(1:length(outbreak_level$location), function(x){
+  if (outbreak_level$location[[x]] == "At Home"){
+    c(1,2) # positive direction, top dir
+  } else if(outbreak_level$location[[x]] == "Relatives"){
+    c(1,1) # positive dir, mid Dir
+  } else if(outbreak_level$location[[x]] == "School"){
+    c(-1,-1) # neg dir, mid
+  } else if(outbreak_level$location[[x]] == "In Public"){
+    c(-1,-2)
+  }
+}) %>% do.call(rbind,.)
+colnames(directionality) = c("direction", "positionality")
+outbreak_level=cbind(outbreak_level,directionality)
+month_date_range <- seq(as.Date("2022-01-01"), as.Date("2022-02-28"), by="days")
+day_format <- format(month_date_range, '%d')
+month_format <- format(month_date_range, "%M")
+M_df = data.frame(month_date_range, month_format, day_format)
+
+## cutting the dates
+outbreak_level=outbreak_level[1:8,]
+M_df = M_df[1:14,]
+M_df$month_format="Jan"
+location_labs=c("In Public", "School", "","Relatives", "At Home")
+```
+### Timeline Report
+
+## Here were Johnny's behavior the past two weeks:
+```{r timeline plot, echo=FALSE}
+timeline_plot<-ggplot(outbreak_level,aes(x=dates,y=positionality, col=location, label=type))
+timeline_plot<-timeline_plot+labs(col="Type") + geom_hline(yintercept=0)
+timeline_plot<-timeline_plot+scale_color_manual(values=outbreak_level_type, 
+                                                labels=c("Mute", "Panic Attack",
+                                                         "Shut Down", "Tantrum"), 
+                                                drop = FALSE)
+timeline_plot<-timeline_plot+theme_classic() +
+  theme(axis.text.x =element_blank(),
+        axis.line.x =element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.line.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.y=element_text(size=12)
+        ) + ylab("Location") + xlab("") +
+        scale_y_continuous(breaks = -2:2, labels = location_labs)
+
+
+# Plot horizontal black line for timeline
+timeline_plot<-timeline_plot+ geom_point(aes(size = intensity), alpha = 0.5) +
+  geom_text(data = M_df, aes(x=month_date_range, y=-0.2, label=day_format),
+          size=10,vjust=0.5, color='black', angle=90) + 
+  scale_size(range = c(5, 20)) +
+  geom_text(data = M_df, aes(x=month_date_range, y= -0.5, label=month_format,
+            fontface="bold"),size=7.5, color='black')
+
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+timeline_plot
 ```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
