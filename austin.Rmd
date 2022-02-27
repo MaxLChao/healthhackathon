@@ -1,0 +1,35 @@
+---
+title: "AUsitn"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+
+obs.am <- 5
+obs.pm <- 11
+
+times.am <- c("12AM", "1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM")
+res.am <- sample(times.am, replace = TRUE, prob = c(0, 0, 0, 0, 0, 0, 0, 0.2, 0.35, 0.3, 0.4, 0.1))
+aggregated.am <- c(sum(res.am == "12AM"), sum(res.am == "1AM"), sum(res.am == "2AM"), sum(res.am == "3AM"), sum(res.am == "4AM"), sum(res.am == "5AM"), sum(res.am == "6AM"), sum(res.am == "7AM"), sum(res.am == "8AM"), sum(res.am == "9AM"), sum(res.am == "10AM"), sum(res.am == "11AM"))
+
+times.pm <- c("12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM")
+res.pm <- sample(times.pm, replace = TRUE, prob = c(0.05, 0.1, 0.1, 0.2, 0.2, 0.15, 0.1, 0.1, 0, 0, 0, 0))
+aggregated.pm <- c(sum(res.pm == "12PM"), sum(res.pm == "1PM"), sum(res.pm == "2PM"), sum(res.pm == "3PM"), sum(res.pm == "4PM"), sum(res.pm == "5PM"), sum(res.pm == "6PM"), sum(res.pm == "7PM"), sum(res.pm == "8PM"), sum(res.pm == "9PM"), sum(res.pm == "10PM"), sum(res.pm == "11PM"))
+
+df.am <- data.frame(Time=times.am, Usage=aggregated.am)
+df.pm <- data.frame(Time=times.pm, Usage=aggregated.pm)
+```
+
+```{r}
+ggplot(df.am, aes(x=Time, y=Usage)) + geom_bar(stat='identity', fill="#f6ec64") + theme_light() + coord_polar(start=285/57.2957795, clip="off") + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), axis.title.x=element_text(size=20, face="bold"), axis.text.x = element_text(size=18, face="bold"), panel.border = element_blank()) + xlab("Outbursts AM")+ ylab("")
+ggsave("am.png")
+```
+```{r}
+ggplot(df.pm, aes(x=Time, y=Usage)) + geom_bar(stat='identity', fill="#ff9e03") + theme_light() + coord_polar(start=285/57.2957795, clip="off") + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), axis.title.x=element_text(size=20, face="bold"), axis.text.x = element_text(size=18, face="bold"), panel.border = element_blank()) + xlab("Outbursts AM")+ ylab("")
+ggsave("pm.png")
+```
